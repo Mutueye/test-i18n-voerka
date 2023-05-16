@@ -1,18 +1,20 @@
 <template>
   <div class="flex flex-row items-center">
-    <button
-      v-for="(theme, index) in currentThemeList"
-      :key="'primary' + theme.name"
-      class="theme-btn mr-spacing color-white"
-      :style="{ backgroundColor: theme.config[dayNightMode].color.primary }"
-      @click="themeStore.setCurrentThemeIndex(index)">
-      <i
-        v-if="currentThemeIndex === index"
-        inline-block
-        align-middle
-        text-size-large
-        class="i-mdi-check-circle-outline" />
-    </button>
+    <div v-if="showThemes" class="flex flex-row items-center">
+      <button
+        v-for="(theme, index) in currentThemeList"
+        :key="'primary' + theme.name"
+        class="theme-btn mr-spacing color-white"
+        :style="{ backgroundColor: theme.config[dayNightMode].color.primary }"
+        @click="themeStore.setCurrentThemeIndex(index)">
+        <i
+          v-if="currentThemeIndex === index"
+          inline-block
+          align-middle
+          text-size-large
+          class="i-mdi-check-circle-outline" />
+      </button>
+    </div>
     <button class="theme-btn" @click="toggleDayNight">
       <i
         inline-block
@@ -30,6 +32,7 @@
   import { useThemeStore } from '@/store/theme';
   import { currentThemeList } from '@itshixun/qst-ui-system';
 
+  defineProps<{ showThemes: boolean }>();
   const themeStore = useThemeStore();
   const { currentThemeIndex } = storeToRefs(themeStore);
   const { toggleDayNight, dayNightMode } = useToggleDayNight();

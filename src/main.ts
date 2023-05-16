@@ -12,7 +12,7 @@ import 'element-plus/dist/index.css';
 import 'element-plus/theme-chalk/dark/css-vars.css';
 import 'uno.css';
 
-initQstTheme();
+initQstTheme({ initialThemeIndex: 2 });
 
 VoerkaI18nScope.change(getCurrentLang()).then(() => {
   const app = createApp(App);

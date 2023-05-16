@@ -1,5 +1,6 @@
 export default {
     "1": [
+        "",
         "You Clicked Once",
         "You Clicked Twice",
         "You Clicked {} Times"
