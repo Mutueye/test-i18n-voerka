@@ -1,11 +1,11 @@
 <template>
   <ScrollableContent>
     <div class="w-full flex flex-col items-center">
-      <div class="w-full py-50px text-center font-bold">首页</div>
+      <div class="w-full py-50px text-center font-bold">{{ t('首页') }}</div>
       <HelloWorld msg="Hellow World" />
-      <el-button>按钮文字</el-button>
+      <el-button>{{ t('按钮文字') }}</el-button>
       <div class="p-spacing-sm">
-        <el-select v-model="selectedSchool" value-key="id" placeholder="请选择">
+        <el-select v-model="selectedSchool" value-key="id" :placeholder="t('请选择')">
           <el-option v-for="item in schoolList" :key="item.id" :label="item.name" :value="item" />
         </el-select>
       </div>
@@ -28,6 +28,7 @@
   import HelloWorld from '@/components/HelloWorld.vue';
   import ScrollableContent from '@/components/ScrollableContent.vue';
   import { ConfigModel, getSchoolList, SchoolModel, getConfigList } from '../api/dicts';
+  import { t } from '@/languages';
 
   const selectedSchool = ref<SchoolModel>();
   const schoolList = ref<SchoolModel[]>([]);

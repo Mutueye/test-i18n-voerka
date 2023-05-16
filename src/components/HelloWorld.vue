@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { ref } from 'vue';
+  import { t } from '@/languages';
 
   defineProps<{ msg: string }>();
 
@@ -10,7 +11,9 @@
 <template>
   <div>{{ msg }}</div>
   <div class="py-spacing-sm flex flex-col items-center">
-    <el-button type="primary" @click="count++">按钮点击了{{ count }}次</el-button>
-    <el-input v-model="inputStr" class="mt-spacing-sm" placeholder="输入框" />
+    <el-button type="primary" @click="count++">
+      {{ t('按钮点击了{}次', () => count) }}
+    </el-button>
+    <el-input v-model="inputStr" class="mt-spacing-sm" :laceholder="t('请输入')" />
   </div>
 </template>
