@@ -10,8 +10,11 @@
     </div>
     <div class="h-full w-full flex flex-col bg-bg min-w-0">
       <div class="flex flex-row items-center justify-between px-spacing-xl py-spacing">
-        <div class="text-size-large font-semibold color-text-primary">{{ route.meta.title }}</div>
-        <ThemeToggler />
+        <div class="text-size-large font-semibold color-text-primary">{{ t(route.meta.title) }}</div>
+        <div class="flex flex-row items-center">
+          <LanguageSelector class="mr-spacing" />
+          <ThemeToggler />
+        </div>
       </div>
       <RouterView />
     </div>
@@ -23,6 +26,8 @@
   import { LayoutEnum } from '@/layouts/layoutRouteConfig';
   import Menu from './components/Menu.vue';
   import ThemeToggler from '@/components/ThemeToggler.vue';
+  import LanguageSelector from '@/components/LanguageSelector.vue';
+  import { t } from '@/languages';
 
   const route = useRoute();
 

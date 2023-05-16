@@ -6,7 +6,7 @@
       class="admin-sub-menu">
       <template #title>
         <menu-icon :icon-class="get(menuData, 'meta.menuConfig.iconClass', '')" />
-        <span class="font-semibold">{{ menuData.meta?.title }}</span>
+        <span class="font-semibold">{{ t(menuData.meta?.title || '') }}</span>
       </template>
       <menu-item v-for="subItem in menuData.children" :key="subItem.name" :menu-data="subItem" />
     </el-sub-menu>
@@ -16,7 +16,7 @@
       :index="(menuData.name as string)"
       @click="router.push({ name: menuData.name })">
       <menu-icon :icon-class="get(menuData, 'meta.menuConfig.iconClass', '')" />
-      <span class="font-semibold">{{ menuData.meta?.title }}</span>
+      <span class="font-semibold">{{ t(menuData.meta?.title || '') }}</span>
       <!-- active动效 -->
       <div class="active-line top" />
       <div class="active-line bottom" />
@@ -34,6 +34,7 @@
   import { useRouteInfo } from '@/componsables/useRouteInfo';
   import MenuIcon from './MenuIcon.vue';
   import { get } from 'lodash-es';
+  import { t } from '@/languages';
 
   const { router } = useRouteInfo();
 

@@ -1,6 +1,6 @@
 import { RouteRecordData } from '@/router/types';
 import Home from './views/Home.vue';
-import { t } from '@/languages'
+import { t } from '@/languages';
 
 const routeData: RouteRecordData = {
   admin: [

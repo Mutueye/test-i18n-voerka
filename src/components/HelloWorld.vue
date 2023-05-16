@@ -14,6 +14,6 @@
     <el-button type="primary" @click="count++">
       {{ t('按钮点击了{}次', () => count) }}
     </el-button>
-    <el-input v-model="inputStr" class="mt-spacing-sm" :laceholder="t('请输入')" />
+    <el-input v-model="inputStr" class="mt-spacing-sm" :placeholder="t('请输入')" />
   </div>
 </template>
