@@ -18,7 +18,7 @@ const scopeSettings = {
         },
         {
             "name": "en",
-            "title": "英语"
+            "title": "English"
         }
     ],
     "defaultLanguage": "zh",
