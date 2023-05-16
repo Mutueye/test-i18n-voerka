@@ -1,0 +1,22 @@
+{
+  "按钮点击了{}次": {
+    "en": ["You Clicked Once", "You Clicked Twice", "You Clicked {} Times"],
+    "$file": ["components/HelloWorld.vue"]
+  },
+  "请输入": {
+    "en": "please input",
+    "$file": ["components/HelloWorld.vue"]
+  },
+  "首页": {
+    "en": "Home",
+    "$file": ["modules/home/views/Home.vue"]
+  },
+  "按钮文字": {
+    "en": "button text",
+    "$file": ["modules/home/views/Home.vue"]
+  },
+  "请选择": {
+    "en": "please select",
+    "$file": ["modules/home/views/Home.vue"]
+  }
+}
