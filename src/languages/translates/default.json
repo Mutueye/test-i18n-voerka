@@ -20,7 +20,7 @@
     "$file": ["modules/home/views/Home.vue"]
   },
   "基础页面框架": {
-    "en": "基础页面框架",
+    "en": "Base Page Layout",
     "$file": ["modules/base/route.ts"]
   }
 }

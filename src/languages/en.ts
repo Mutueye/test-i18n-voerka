@@ -7,5 +7,6 @@ export default {
     "2": "please input",
     "3": "Home",
     "4": "button text",
-    "5": "please select"
+    "5": "please select",
+    "6": "Base Page Layout"
 }
