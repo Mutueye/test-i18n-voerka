@@ -19,8 +19,12 @@
     "en": "please select",
     "$file": ["modules/home/views/Home.vue"]
   },
-  "基础页面框架": {
-    "en": "Base Page Layout",
-    "$file": ["modules/base/route.ts"]
+  "请点击此按钮": {
+    "en": "please click me",
+    "$file": ["components/HelloWorld.vue"]
+  },
+  "国际化示例": {
+    "en": "I18N example",
+    "$file": ["layouts/admin/AdminLayout.vue"]
   }
 }

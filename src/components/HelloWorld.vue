@@ -12,7 +12,7 @@
   <div>{{ msg }}</div>
   <div class="py-spacing-sm flex flex-col items-center">
     <el-button type="primary" @click="count++">
-      {{ t('按钮点击了{}次', () => count) }}
+      {{ count ? t('按钮点击了{}次', () => count) : t('请点击此按钮') }}
     </el-button>
     <el-input v-model="inputStr" class="mt-spacing-sm" :placeholder="t('请输入')" />
   </div>

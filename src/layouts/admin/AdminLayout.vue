@@ -4,7 +4,7 @@
       <div class="absolute w-1px top-0 bottom-0 right-0 bg-border-light" />
       <div class="flex flex-row items-center w-full p-spacing">
         <i inline-block align-middle w-32px h-32px class="i-uplus:logo" />
-        <div class="text-size-medium font-semibold ml-spacing-xxs">FRONTEND SCAFFOLD</div>
+        <div class="text-size-medium font-semibold ml-spacing-xxs">{{ t('国际化示例') }}</div>
       </div>
       <Menu :layout="layout" />
     </div>
