@@ -18,5 +18,9 @@
   "请选择": {
     "en": "please select",
     "$file": ["modules/home/views/Home.vue"]
+  },
+  "基础页面框架": {
+    "en": "基础页面框架",
+    "$file": ["modules/base/route.ts"]
   }
 }
