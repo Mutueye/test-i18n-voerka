@@ -8,5 +8,6 @@ export default {
     "3": "Home",
     "4": "button text",
     "5": "please select",
-    "6": "Base Page Layout"
+    "6": "please click me",
+    "7": "I18N example"
 }
