@@ -11,5 +11,5 @@ export default {
     "5": "please select",
     "6": "I18N example",
     "7": "Click to earn some money",
-    "8": "Your balance is: {value | currency}"
+    "8": "Your balance is: { value | currency }"
 }

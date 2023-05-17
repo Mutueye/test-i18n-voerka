@@ -42,9 +42,9 @@
     "jp": "ボタンをクリックしてお金を稼ぐ"
   },
   "您的余额为：{ value | currency }": {
-    "en": "Your balance is: {value | currency}",
+    "en": "Your balance is: { value | currency }",
     "$file": ["components/HelloWorld.vue"],
     "cht": "您的餘額為：{ value | currency }",
-    "jp": "残高は次のとおりです:{value｜currency}"
+    "jp": "残高は次のとおりです:{ value | currency }"
   }
 }
