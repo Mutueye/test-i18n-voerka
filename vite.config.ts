@@ -58,6 +58,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     ...baseConfig,
+    base: `${process.env.VITE_APP_BASE_PATH}`,
     server: {
       open: true,
       host: '0.0.0.0',

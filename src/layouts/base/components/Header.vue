@@ -4,7 +4,7 @@
       <i inline-block align-middle text-size-32px class="i-uplus:logo" />
       <div class="text-size-large font-semibold ml-10px">前端脚手架</div>
     </div>
-    <ThemeToggler />
+    <ThemeToggler :show-themes="false" />
   </div>
 </template>
 

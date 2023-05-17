@@ -13,7 +13,7 @@
         <div class="text-size-large font-semibold color-text-primary">{{ t(route.meta.title) }}</div>
         <div class="flex flex-row items-center">
           <LanguageSelector class="mr-spacing" />
-          <ThemeToggler />
+          <ThemeToggler :show-themes="false" />
         </div>
       </div>
       <RouterView />

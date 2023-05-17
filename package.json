@@ -20,7 +20,8 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:update": "vitest --update",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "deploy:pages": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist"
   },
   "dependencies": {
     "@iconify-json/line-md": "^1.1.24",
@@ -48,6 +49,7 @@
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^9.13.0",
+    "gh-pages": "^5.0.0",
     "jsdom": "^22.0.0",
     "lint-staged": "^13.2.2",
     "postcss": "^8.4.23",
