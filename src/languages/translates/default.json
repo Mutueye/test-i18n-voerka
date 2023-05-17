@@ -19,12 +19,16 @@
     "en": "please select",
     "$file": ["modules/home/views/Home.vue"]
   },
-  "请点击此按钮": {
-    "en": "please click me",
-    "$file": ["components/HelloWorld.vue"]
-  },
   "国际化示例": {
     "en": "I18N example",
     "$file": ["layouts/admin/AdminLayout.vue"]
+  },
+  "点击按钮赚钱": {
+    "en": "Click to earn some money",
+    "$file": ["components/HelloWorld.vue"]
+  },
+  "您的余额为：{ value | currency }": {
+    "en": ["Your balance is：{ value | currency }"],
+    "$file": ["components/HelloWorld.vue"]
   }
 }

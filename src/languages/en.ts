@@ -9,6 +9,9 @@ export default {
     "3": "Home",
     "4": "button text",
     "5": "please select",
-    "6": "please click me",
-    "7": "I18N example"
+    "6": "I18N example",
+    "7": "Click to earn some money",
+    "8": [
+        "Your balance is：{ value | currency }"
+    ]
 }
