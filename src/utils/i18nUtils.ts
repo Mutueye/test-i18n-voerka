@@ -9,21 +9,16 @@ export const getCurrentLang = () => {
   return storageLang ? storageLang : 'zh';
 };
 
-/** voerka-i18n的语言代码用的是百度翻译的代码，name为百度翻译用的语言代码，standardCode为国际标准代码 */
+/**
+ * voerka-i18n的语言代码用的是百度翻译的代码，
+ * 为了对应标准的国际化代码，通过此对象进行关联
+ * */
 export const i18nCode = {
-  zh: {
-    title: '简体中文',
-    name: 'zh',
-    standardCode: 'zh-CN',
-  },
-  cht: {
-    title: '繁体中文',
-    name: 'cht',
-    standardCode: 'zh-TW',
-  },
-  en: {
-    title: '英语',
-    name: 'en',
-    standardCode: 'en',
-  },
+  /** 简体中文 */
+  zh: 'zh-CN',
+  /** 繁体中文 */
+  cht: 'zh-TW',
+  /** 美国英语 */
+  en: 'en',
+  // TODO 更多语言
 };

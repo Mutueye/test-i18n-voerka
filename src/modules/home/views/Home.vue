@@ -5,7 +5,7 @@
       <HelloWorld msg="Hello World" />
       <el-button>{{ t('按钮文字') }}</el-button>
       <div class="p-spacing-sm">
-        <el-select v-model="value" class="m-2" :placeholder="t('请选择')">
+        <el-select v-model="value" class="m-2" :placeholder="t('请选择')" clearable>
           <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
         </el-select>
       </div>
