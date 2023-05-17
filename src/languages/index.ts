@@ -14,11 +14,19 @@ const scopeSettings = {
     "languages": [
         {
             "name": "zh",
-            "title": "中文"
+            "title": "简体中文"
+        },
+        {
+            "name": "cht",
+            "title": "繁体中文"
         },
         {
             "name": "en",
             "title": "English"
+        },
+        {
+            "name": "jp",
+            "title": "日本語"
         }
     ],
     "defaultLanguage": "zh",
@@ -27,11 +35,15 @@ const scopeSettings = {
 }
 const formatters = {
     'zh' :  defaultFormatters,
-    'en' : ()=>import("./formatters/en")
+    'cht' : ()=>import("./formatters/cht"),
+	'en' : ()=>import("./formatters/en"),
+	'jp' : ()=>import("./formatters/jp")
 }
 // 语言包加载器
 const loaders = { 
-    "en" : ()=>import("./en") 
+    "cht" : ()=>import("./cht"),
+    "en" : ()=>import("./en"),
+    "jp" : ()=>import("./jp") 
 }
 
 // 语言作用域
