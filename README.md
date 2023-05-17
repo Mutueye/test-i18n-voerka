@@ -107,7 +107,7 @@ src
 
 总之，反复执行voerkai18n extract命令是安全的，不会导致进行了一半的翻译内容丢失，可以放心执行。
 #### 自动翻译
-voerkai18n除了手动翻译外，可通过voerkai18n translate命令来实现调用在线翻译服务进行自动翻译。
+voerkai18n除了手动翻译外，可通过voerkai18n translate命令来实现调用在线翻译服务进行自动翻译。执行自动翻译会覆盖之前翻译的内容，不过插件会将之前翻译的json文件放在backup文件夹内进行备份，因此可以放心的执行自动翻译。
 ```sh
 voerkai18n translate --provider baidu --appkey <在百度翻译上申请的密钥> --appid <在百度翻译上申请的appid>
 ```

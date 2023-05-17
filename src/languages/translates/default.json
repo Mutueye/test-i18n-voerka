@@ -1,34 +1,50 @@
 {
   "按钮点击了{}次": {
     "en": ["", "You have clicked once", "You have clicked twice", "You have clicked {} times"],
-    "$file": ["components/HelloWorld.vue"]
+    "$file": ["components/HelloWorld.vue"],
+    "cht": "按鈕點擊了{}次",
+    "jp": "ボタンをクリックした{}回数"
   },
   "请输入": {
     "en": "please input",
-    "$file": ["components/HelloWorld.vue"]
+    "$file": ["components/HelloWorld.vue"],
+    "cht": "請輸入",
+    "jp": "入力してください"
   },
   "首页": {
     "en": "Home",
-    "$file": ["modules/home/views/Home.vue"]
+    "$file": ["modules/home/views/Home.vue"],
+    "cht": "首頁",
+    "jp": "トップページ"
   },
   "按钮文字": {
     "en": "button text",
-    "$file": ["modules/home/views/Home.vue"]
+    "$file": ["modules/home/views/Home.vue"],
+    "cht": "按鈕文字",
+    "jp": "ボタンテキスト"
   },
   "请选择": {
     "en": "please select",
-    "$file": ["modules/home/views/Home.vue"]
+    "$file": ["modules/home/views/Home.vue"],
+    "cht": "請選擇",
+    "jp": "選択してください"
   },
   "国际化示例": {
     "en": "I18N example",
-    "$file": ["layouts/admin/AdminLayout.vue"]
+    "$file": ["layouts/admin/AdminLayout.vue"],
+    "cht": "國際化示例",
+    "jp": "国際化の例"
   },
   "点击按钮赚钱": {
     "en": "Click to earn some money",
-    "$file": ["components/HelloWorld.vue"]
+    "$file": ["components/HelloWorld.vue"],
+    "cht": "點擊按鈕賺錢",
+    "jp": "ボタンをクリックしてお金を稼ぐ"
   },
   "您的余额为：{ value | currency }": {
-    "en": ["Your balance is：{ value | currency }"],
-    "$file": ["components/HelloWorld.vue"]
+    "en": "Your balance is: {value | currency}",
+    "$file": ["components/HelloWorld.vue"],
+    "cht": "您的餘額為：{ value | currency }",
+    "jp": "残高は次のとおりです:{value｜currency}"
   }
 }
