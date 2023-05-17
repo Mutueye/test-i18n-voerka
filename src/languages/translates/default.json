@@ -1,6 +1,6 @@
 {
   "按钮点击了{}次": {
-    "en": ["", "You Clicked Once", "You Clicked Twice", "You Clicked {} Times"],
+    "en": ["", "You have clicked once", "You have clicked twice", "You have clicked {} times"],
     "$file": ["components/HelloWorld.vue"]
   },
   "请输入": {

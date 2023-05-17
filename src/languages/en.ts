@@ -1,9 +1,9 @@
 export default {
     "1": [
         "",
-        "You Clicked Once",
-        "You Clicked Twice",
-        "You Clicked {} Times"
+        "You have clicked once",
+        "You have clicked twice",
+        "You have clicked {} times"
     ],
     "2": "please input",
     "3": "Home",
